@@ -42,7 +42,7 @@ overrides = {}
 for key in ["frequency_hz", "sample_rate", "lna_gain", "mixer_gain", "vga_gain"]:
     value = getattr(args, key)
     if value is not None:
-        print(f"WARNING: {key} overridden from command line: {radio_config[key]} -> {value}")
+        print(f"Warning: {key} overridden from command line: {radio_config[key]} -> {value}")
         radio_config[key] = value
         overrides[key] = value
 
