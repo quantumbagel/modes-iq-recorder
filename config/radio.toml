@@ -1,0 +1,12 @@
+# master settings for all airspy modules. 
+
+
+frequency_hz = 1090e6 
+sample_rate = 6000000 #(6 MSPS) (native mode)
+sample_type = "CS16" #(for the 16 bit IQ, 4 bytes/sample)
+
+# taken from libairspy (airspy.c)
+lna_gain = 13
+mixer_gain = 9
+vga_gain = 11
+
