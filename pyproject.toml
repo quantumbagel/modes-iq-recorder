@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modes-iq-recorder"
+version = "0.1.0"
+description = "Records raw IQ samples at 1090 MHz from an Airspy Mini for offline analysis"
+readme = "README.md"
+requires-python = ">=3.11"  # tomllib needs 3.11+
+# SoapySDR and SoapyAirspy are not on pip. Install them from the system (apt or Homebrew)
+# and create the venv with --system-site-packages so Python can see them.
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[project.scripts]
+modes-recorder = "modes_recorder.cli:main"
+
+[tool.setuptools]
+packages = ["modes_recorder"]
+
+[tool.ruff]
+line-length = 120

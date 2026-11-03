@@ -1,4 +1,9 @@
 recordings/
 *.bin
+*.cs16
 __pycache__/
 .venv/
+*.egg-info/
+build/
+.ruff_cache/
+.pytest_cache/
