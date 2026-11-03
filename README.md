@@ -1,0 +1,2 @@
+# command to run cli: cd ~/Documents/GitHub/modes-iq-recorder, source .venv/bin/activate, modes-recorder --help
+# dummy command: modes-recorder --recorder config/recorder1.toml --site "Test" --lat 35.877 --lon -78.787 --duration 10 --vga-gain 8
